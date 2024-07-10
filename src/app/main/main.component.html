@@ -8,12 +8,12 @@
             <div class="login-content">
                 <div class="form-item">
                     <label for="email">Enter Email</label>
-                    <input type="email" name="email" value="" id="" placeholder="example@email.com">
+                    <input type="email" [(ngModel)]="loginObj.mail" name="mail" id="" placeholder="example@email.com">
                 </div>
                 <div class="form-item">
                     <label for="password">Enter Password</label>
                     <label for="text"></label>
-                    <input type="password" name="password" value="" id="password" placeholder="Enter your Password" required class="pass-key">
+                    <input type="password" name="" id="password" placeholder="Enter your Password" required class="pass-key">
                     
                     <!-- <span class="show">Show</span> -->
                 </div>
@@ -32,7 +32,7 @@
                     <!--<a href="#register" class="link-register">Sign Up</a>-->
                 </div>
 
-                <button type="submit">LogIn</button>
+                <button type="submit" (click)="onLogin()">LogIn</button>
             </div>
           
         </form>
@@ -41,4 +41,3 @@
         <img src="" alt="">
     </div>
 </div>
-
